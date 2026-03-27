@@ -33,6 +33,7 @@ requirements:
     - starlette
     - typing_extensions
     - uvicorn
+    - guard-core
 
 tests:
   - python:
