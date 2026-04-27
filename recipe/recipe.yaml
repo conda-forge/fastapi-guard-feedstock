@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "5.2.0"
+  version: "6.0.0"
 
 package:
   name: fastapi-guard
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/f/fastapi-guard/fastapi_guard-${{ version }}.tar.gz
-  sha256: 160b283954a3193fe0218d34e064581e57f4ee03a7e8757f416d41af2389f412
+  sha256: d73c501edcf4a92c9905af6af853fdc75d16f5f9e9ea188410b303261d0d1be6
 
 build:
   number: 0
@@ -23,17 +23,10 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - cachetools
     - fastapi
-    - httpx
-    - maxminddb
-    - pydantic
-    - redis-py
-    - requests
-    - starlette
-    - typing_extensions
-    - uvicorn
     - guard-core
+    - starlette
+    - uvicorn
 
 tests:
   - python:
