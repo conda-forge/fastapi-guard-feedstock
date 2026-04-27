@@ -23,17 +23,10 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - cachetools
     - fastapi
-    - httpx
-    - maxminddb
-    - pydantic
-    - redis-py
-    - requests
-    - starlette
-    - typing_extensions
-    - uvicorn
     - guard-core
+    - starlette
+    - uvicorn
 
 tests:
   - python:
