@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "7.0.0"
+  version: "7.1.0"
 
 package:
   name: fastapi-guard
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/f/fastapi-guard/fastapi_guard-${{ version }}.tar.gz
-  sha256: 67dcd1a562dfef4d98093e3fe4f8f11909278d8c907df1b119dc5ad7c1aea418
+  sha256: bc85e6ee2e4ec3481635b1c8ca4e874ae039747a1e72708bcca4cf6f71896220
 
 build:
   number: 0
