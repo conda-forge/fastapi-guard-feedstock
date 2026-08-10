@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "7.4.1"
+  version: "7.5.0"
 
 package:
   name: fastapi-guard
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/f/fastapi-guard/fastapi_guard-${{ version }}.tar.gz
-  sha256: 8fd81b014a0b0a050063d22581b498ef2f85c46322842ed933ec2bb8734a9c73
+  sha256: 70dd9f063e44d000f16013bcc94252f6ac91e85e2ea2833f9ab1463f20641eeb
 
 build:
   number: 0
@@ -33,7 +33,9 @@ tests:
       imports:
         - guard
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: A security library for FastAPI to control IPs, log requests, and detect penetration attempts.
