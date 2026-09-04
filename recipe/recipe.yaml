@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "7.7.0"
+  version: "7.8.0"
 
 package:
   name: fastapi-guard
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/f/fastapi-guard/fastapi_guard-${{ version }}.tar.gz
-  sha256: 7fd033109878b87bd3c83b3ee1cbe65839e9f43ddd12171595dfed6467fa03be
+  sha256: 8340a2b9bac4277f8ecb521e3f71a26c164e819b8ef474cd04d6d50d909826ea
 
 build:
   number: 0
@@ -24,7 +24,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - fastapi
-    - guard-core
+    - guard-core >=3.14.0
     - starlette
     - uvicorn
 
