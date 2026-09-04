@@ -23,9 +23,9 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - fastapi
+    - fastapi >=0.109.0
     - guard-core >=3.14.0
-    - starlette
+    - starlette >=0.35.0
     - uvicorn
 
 tests:
