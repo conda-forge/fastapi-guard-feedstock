@@ -24,7 +24,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - fastapi >=0.109.0
-    - guard-core >=3.14.0
+    - guard-core >=4.0.0
     - starlette >=0.35.0
     - uvicorn
 
